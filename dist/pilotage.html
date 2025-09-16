@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pilotage</title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="main pilotage">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row header__row">
+                <div class="col-lg-2 header__col-logo">
+                    <a href="" class="header__logo">
+                        Pilotage
+                    </a>
+
+                    <div class="ms-auto only-mob">
+                        <div class="header__mob-col-nav">
+                            <a href="tel:+74951343484" class="header__mob-tel">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480">
+                                    <path fill="currentColor"
+                                          d="m464.56,345.6c-1.31-1.04-96.56-69.7-122.7-64.77-12.48,2.21-19.62,10.72-33.94,27.76-2.3,2.75-7.84,9.34-12.14,14.03-9.05-2.95-17.88-6.54-26.42-10.75-44.07-21.46-79.68-57.06-101.14-101.14-4.21-8.54-7.8-17.37-10.75-26.42,4.7-4.32,11.3-9.86,14.11-12.22,16.96-14.24,25.49-21.38,27.7-33.89,4.53-25.92-64.08-121.82-64.8-122.69-6.3-9.01-16.32-14.7-27.28-15.52C79.39,0,0,102.99,0,120.34c0,1.01,1.46,103.47,127.81,232,128.4,126.21,230.85,127.66,231.86,127.66,17.36,0,120.34-79.39,120.34-107.2-.81-10.92-6.48-20.91-15.44-27.2Z"/>
+                                </svg>
+                            </a>
+                            <a data-bs-toggle="modal"
+                               href="#topNavMenu"
+                               data-bs-target="#topNavMenu"
+                               class="header__mob-toggle">
+
+                                <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 272">
+                                    <path fill="currentColor"
+                                          d="m360,48H24C10.4,48,0,37.6,0,24S10.4,0,24,0h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,160H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,272H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-xl-7 only-pc">
+                    <ul class="nav header__nav">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Проекты</a></li>
+                        <li><a href="">Материалы</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href=""><i class="header__nav__area"></i>Заполнить заявку</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xl-3 header__right only-pc">
+                    <div class="header__work-time">
+                        пн-пт: 09:00-18:00
+                    </div>
+                    <a href="tel:+74951343484" class="header__tel">+7 495 134-34-84</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="home-top">
+        <div class="home-top__wrap">
+            <div class="container">
+                <h1><b>Производство мебели</b> для архитекторов и дизайнеров</h1>
+                <p>Работайте с производителем, который дорожит вашей репутацией.<br>
+                    Мы гарантируем высокое качество продукции, четкое соблюдение сроков <br>
+                    и привлекательные условия сотрудничества.</p>
+
+                <div class="home-top__btn">
+                    <a href="" class="btn">Начать сотрудничество</a>
+                </div>
+            </div>
+        </div>
+        <div class="home-top__img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="home-top-img__before">
+                            <picture>
+                                <source srcset="./images/dist/p/after.jpg 1x, ./images/dist/p/after@2.jpg 2x">
+                                <img src="./images/dist/p/after.jpg"
+                                     width="634" height="406"
+                                     loading="lazy"
+                                     alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-top-img__after">
+                            <picture>
+                                <source srcset="./images/dist/p/after2.jpg 1x, ./images/dist/p/after2@2.jpg 2x">
+                                <img src="./images/dist/p/after2.jpg"
+                                     width="634" height="406"
+                                     loading="lazy"
+                                     alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-top__footer">
+            Из проекта в реальность <span>за 14 дней</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-sect-prim">
+            <h2>Работая с нами, вы получите</h2>
+            <div class="row">
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="30" height="36" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 426.67 513.92">
+                                <path stroke-width="0" fill="#000"
+                                      d="m266.67,320c88.23,0,160-71.76,160-160S354.9,0,266.67,0h-106.67c-52.93,0-96,43.07-96,96v202.67H10.67C4.78,298.67,0,303.44,0,309.33s4.78,10.67,10.67,10.67h53.33v64H10.67C4.78,384,0,388.78,0,394.67s4.78,10.67,10.67,10.67h53.33v97.92c0,5.89,4.78,10.67,10.67,10.67s10.67-4.78,10.67-10.67v-97.92h202.67c5.89,0,10.67-4.78,10.67-10.67s-4.78-10.67-10.67-10.67H85.33v-64h181.33ZM85.33,96c0-41.17,33.49-74.67,74.67-74.67h106.67c76.46,0,138.67,62.21,138.67,138.67s-62.21,138.67-138.67,138.67H85.33V96Z"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Скидки на материалы<br>
+                            и агентские вознаграждения
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                <path stroke-width="0" fill="#000"
+                                      d="m373.33,235.5c-76.46,0-138.67,62.21-138.67,138.67s62.21,137.83,138.67,137.83,138.67-62.21,138.67-138.67-62.21-137.84-138.67-137.84m0,255.17c-64.68,0-117.33-52.27-117.33-116.5s52.65-117.33,117.33-117.33,117.33,52.27,117.33,116.5-52.65,117.33-117.33,117.33m28.89-103.55c4.16,4.16,4.16,10.92,0,15.08-2.09,2.09-4.82,3.11-7.55,3.11s-5.46-1.04-7.55-3.11l-21.33-21.33c-2.01-2.01-3.11-4.71-3.11-7.55v-42.67c0-5.89,4.78-10.67,10.67-10.67s10.67,4.78,10.67,10.67v38.25l18.22,18.22Zm13.78-344.45h-32V10.67c0-5.89-4.78-10.67-10.67-10.67s-10.67,4.78-10.67,10.67v32h-213.33V10.67c0-5.89-4.78-10.67-10.67-10.67s-10.67,4.78-10.67,10.67v32h-32C43.07,42.67,0,85.74,0,138.67v277.33C0,468.93,43.07,512,96,512h128c5.89,0,10.67-4.78,10.67-10.67s-4.78-10.67-10.67-10.67H96c-41.17,0-74.67-33.49-74.67-74.67v-224h469.33v32c0,5.89,4.78,10.67,10.67,10.67s10.67-4.78,10.67-10.67v-85.33c0-52.93-43.07-96-96-96M21.33,170.67v-32c0-41.17,33.49-74.67,74.67-74.67h320c41.17,0,74.67,33.49,74.67,74.67v32H21.33Z"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Точное соблюдение сроков
+                            производства
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="30" height="36" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 24">
+                                <path stroke-width="0" fill="#000"
+                                      d="m15.5,0H4.5C2.02,0,0,2.02,0,4.5v15c0,2.48,2.02,4.5,4.5,4.5h11c2.48,0,4.5-2.02,4.5-4.5V4.5c0-2.48-2.02-4.5-4.5-4.5M4.5,1h11c1.93,0,3.5,1.57,3.5,3.5v7H1v-7c0-1.93,1.57-3.5,3.5-3.5m11,22H4.5c-1.93,0-3.5-1.57-3.5-3.5v-7h18v7c0,1.93-1.57,3.5-3.5,3.5M8,6.5c0-.28.22-.5.5-.5h3c.28,0,.5.22.5.5s-.22.5-.5.5h-3c-.28,0-.5-.22-.5-.5m4,11c0,.28-.22.5-.5.5h-3c-.28,0-.5-.22-.5-.5s.22-.5.5-.5h3c.28,0,.5.22.5.5"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Индивидуальное<br>
+                            изготовление мебели<br>
+                            на заказ
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="33" height="36" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 23.99">
+                                <path stroke-width="0" fill="#000"
+                                      d="m20.08,4.61L12.89.5c-1.17-.67-2.62-.67-3.79,0L1.92,4.61c-1.19.68-1.92,1.95-1.92,3.31v8.15c0,1.37.74,2.64,1.92,3.31l7.18,4.11c.58.33,1.24.5,1.89.5s1.31-.17,1.89-.5l7.18-4.11c1.19-.68,1.92-1.95,1.92-3.31V7.92c0-1.37-.74-2.64-1.92-3.31h0Zm-17.66.87L9.6,1.37c.86-.49,1.93-.49,2.79,0l7.18,4.11c.28.16.52.38.73.63l-3.98,2.27c-.2-.23-.42-.44-.68-.59l-3.3-1.9c-.83-.48-1.86-.48-2.69,0l-3.3,1.9c-.27.15-.49.36-.68.59l-3.98-2.27c.21-.24.44-.46.73-.63h0Zm13.58,4.65v3.75c0,.61-.33,1.18-.86,1.48l-3.3,1.89c-.11.06-.23.1-.34.14v-5.09l4.45-2.54c.03.12.05.25.05.38h0Zm-10,0c0-.13.02-.26.05-.38l4.45,2.54v5.09c-.12-.04-.23-.08-.34-.14l-3.3-1.88c-.53-.3-.86-.87-.86-1.48v-3.75h0Zm5,1.29l-4.44-2.54c.09-.08.19-.17.3-.23l3.3-1.9c.26-.15.55-.22.85-.22s.59.07.85.22l3.3,1.9c.11.06.21.14.3.23l-4.44,2.54h0Zm-8.58,7.1c-.88-.5-1.42-1.44-1.42-2.45V7.92c0-.33.08-.65.19-.95l3.98,2.27c-.1.28-.17.58-.17.89v3.75c0,.97.52,1.86,1.36,2.35l3.3,1.89c.26.15.55.23.84.29v4.53c-.31-.06-.62-.14-.9-.3l-7.18-4.11h0Zm18.58-2.45c0,1.01-.54,1.95-1.42,2.45l-7.18,4.11c-.28.16-.59.25-.9.3v-4.53c.29-.05.58-.14.84-.29l3.3-1.89c.84-.48,1.36-1.38,1.36-2.34v-3.75c0-.31-.07-.6-.17-.89l3.98-2.28c.11.3.19.62.19.95v8.15h0Z"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Собственное
+                            <br>конструкторское бюро
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="36" height="33" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 22.03">
+                                <path stroke-width="0" fill="#000"
+                                      d="m24,8.19v-1.35c0-.96-.56-1.84-1.42-2.25L13.95.44c-1.24-.59-2.65-.59-3.89,0L1.42,4.59c-.86.41-1.42,1.3-1.42,2.25v1.39c0,.96.56,1.84,1.42,2.25l1.02.49-1.02.49c-.86.41-1.42,1.3-1.42,2.25v1.48c0,.96.56,1.84,1.42,2.25l8.63,4.14c.62.3,1.28.44,1.94.44s1.34-.15,1.96-.45l8.64-4.17c.86-.41,1.41-1.3,1.41-2.25v-1.44c0-.96-.56-1.84-1.42-2.25l-1.05-.5,1.06-.51c.86-.41,1.41-1.3,1.41-2.25h0ZM10.49,1.35c.96-.46,2.06-.46,3.03,0,0,0,8.74,4.21,8.8,4.25l-8.8,4.22c-.96.46-2.06.46-3.03,0L1.69,5.6c.06-.04,8.8-4.25,8.8-4.25h0ZM1,8.23v-1.39c0-.15.02-.29.07-.43l8.99,4.31c.46.22.95.33,1.44.39v2.9c-.35-.05-.69-.13-1.02-.29L1.85,9.58c-.52-.25-.85-.78-.85-1.35h0Zm.85,8.31c-.52-.25-.85-.78-.85-1.35v-1.48c0-.08.02-.16.03-.24l9.02,4.32c.46.22.95.33,1.44.39v2.79c-.35-.05-.69-.13-1.02-.29L1.85,16.54Zm21.15-1.39c0,.57-.33,1.1-.85,1.35l-8.64,4.17c-.33.16-.67.24-1.02.29v-2.79c.49-.06.98-.17,1.44-.39l9.02-4.32c.01.08.03.16.03.24v1.44h0Zm-.85-2.79c.12.06.24.14.34.23l-8.97,4.3c-.96.46-2.06.46-3.03,0L1.51,12.59c.1-.09.22-.17.34-.23l1.74-.84,6.46,3.1c.62.3,1.28.45,1.95.45s1.34-.15,1.96-.45l6.43-3.1,1.77.85h0Zm0-2.82l-8.64,4.17c-.33.16-.67.24-1.02.29v-2.9c.49-.06.98-.17,1.44-.39l8.99-4.31c.04.14.07.28.07.43v1.35c0,.57-.33,1.1-.85,1.35h0Z"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Существенная метериальная<br>
+                            база матералов для<br>
+                            реализации проекта
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30">
+                    <div class="home-sect-prim__item">
+                        <div class="home-sect-prim__item__ico">
+                            <svg width="36" height="33" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 21.99">
+                                <path stroke-width="0" fill="#000"
+                                      d="m24,7c0,1.46-.5,3.06-1.49,4.75-.09.16-.26.25-.43.25-.09,0-.17-.02-.25-.07-.24-.14-.32-.45-.18-.68.9-1.54,1.36-2.96,1.36-4.25,0-3.14-2.62-6-5.5-6-2.35,0-3.56.93-4.68,1.96l-4.29,4.25c-.59.59-.7,1.5-.25,2.12.28.39.7.63,1.17.67.47.04.92-.13,1.25-.46l4.45-4.39c.2-.19.51-.19.71,0,.19.2.19.51,0,.71l-1.44,1.42,5.32,4.67c.96.85,1.21,2.26.56,3.28-.4.63-1.04,1.06-1.78,1.17-.23.04-.47.04-.7,0,.13.62.04,1.27-.3,1.81-.4.63-1.05,1.06-1.78,1.17-.35.05-.69.03-1.02-.06.04.51-.07,1.03-.35,1.48-.4.63-1.04,1.06-1.78,1.17-.12.02-.24.03-.37.03-.61,0-1.2-.22-1.66-.62l-3.24-2.91C2.4,14,0,10.25,0,7,0,3.27,3.04,0,6.5,0c1.16,0,2.32.38,3.35,1.09.23.16.28.47.13.69-.16.23-.47.29-.69.13-.87-.6-1.83-.91-2.79-.91C3.62,1,1,3.86,1,7c0,2.91,2.35,6.52,6.99,10.71l3.23,2.9c.33.29.77.42,1.22.36.45-.06.83-.32,1.07-.71.39-.62.23-1.48-.38-2l-3.34-3.17c-.2-.19-.21-.51-.02-.71.19-.2.51-.21.71-.02l3.89,3.67c.32.28.77.42,1.21.35.45-.06.83-.32,1.07-.71.39-.61.22-1.48-.38-2l-3.72-3.36c-.2-.19-.22-.5-.04-.7.18-.21.5-.22.7-.04l3.91,3.48c.33.29.77.42,1.22.36.45-.07.83-.32,1.07-.71.39-.62.22-1.48-.38-2l-5.37-4.71-2.3,2.27c-.54.54-1.28.81-2.04.75-.76-.06-1.45-.45-1.9-1.08-.73-1.01-.58-2.48.36-3.41l4.31-4.26C13.36,1.1,14.79,0,17.5,0,20.96,0,24,3.27,24,7h0Z"/>
+                            </svg>
+                        </div>
+                        <div class="home-sect-prim__item__desc">
+                            Поддержка и обучение
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row fpad50">
+            <div class="col-lg-4 col-md-6 fpad30">
+                <div class="home-prim-banner">
+                    <div class="home-prim-banner__wrap">
+                        <h3>Реализация любых, даже самых смелых идей</h3>
+                        <p>без компромиссов в функциональности</p>
+                    </div>
+                    <div class="home-prim-banner__img">
+                        <picture>
+                            <source srcset="./images/dist/p/prim1.jpg 1x, ./images/dist/p/prim1@2.jpg 2x">
+                            <img src="./images/dist/p/prim1.jpg"
+                                 width="414" height="560"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 fpad30">
+                <div class="home-prim-banner">
+                    <div class="home-prim-banner__wrap">
+                        <h3>Индивидуальный подход</h3>
+                        <p> мы выстраиваем прочные деловые и дружеские отношения с партнерами,
+                            внимательно прислушиваемся к вашим идеям и помогаем воплотить
+                            в жизнь самые смелые проекты</p>
+                    </div>
+                    <div class="home-prim-banner__img">
+                        <picture>
+                            <source srcset="./images/dist/p/prim2.jpg 1x, ./images/dist/p/prim2@2.jpg 2x">
+                            <img src="./images/dist/p/prim2.jpg"
+                                 width="414" height="560"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 fpad30">
+                <div class="home-prim-banner">
+                    <div class="home-prim-banner__wrap">
+                        <h3>Нам доверяют профессионалы</h3>
+                        <p>
+                            производим мебель 15 лет на собственном производстве
+                            и имеем среди клиентов и партнёров репутацию надёжной компании</p>
+                    </div>
+                    <div class="home-prim-banner__img">
+                        <picture>
+                            <source srcset="./images/dist/p/prim3.jpg 1x, ./images/dist/p/prim3@2.jpg 2x">
+                            <img src="./images/dist/p/prim3.jpg"
+                                 width="414" height="560"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title-box">
+            <h2>
+                Мебель премиум класса
+            </h2>
+            <div class="title-box__subtitle">для воплощения смелых дизайнерских идей</div>
+        </div>
+        <div class="home-video">
+            <a href="" class="home-video__wrap">
+                <picture>
+                    <source srcset="./images/dist/p/video.jpg 1x, ./images/dist/p/video@2.jpg 2x">
+                    <img src="./images/dist/p/video.jpg"
+                         width="985" height="555"
+                         loading="lazy"
+                         alt="">
+                </picture>
+                <div class="home-video__wrap__play">
+                    <div class="home-video__wrap__play__btn">
+                        <svg width="22" height="24" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147.65 163.86">
+                            <path fill="#fff"
+                                  d="m26.75,3.61C11.98-4.86,0,2.08,0,19.11v125.64c0,17.04,11.98,23.97,26.75,15.51l109.81-62.98c14.78-8.48,14.78-22.21,0-30.69L26.75,3.61Z"/>
+                        </svg>
+                    </div>
+                    <span>Смотреть презентацию<br>
+                    от начальника производства</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="home-cooperation">
+            <div class="home-cooperation__wrap">
+                <div class="title-box home-cooperation__title">
+                    <h2>
+                        Начните сотрудничество уже сегодня!
+                    </h2>
+                    <div class="title-box__subtitle">
+                        Получите приветственную скидку <strong>+5% на первый заказ</strong>
+                    </div>
+                </div>
+                <div class="home-cooperation__btn d-flex justify-content-center">
+                    <a href="" class="btn btn--black">Начать сотрудничество</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-box">
+            <h2>
+                Полный спектр услуг «под ключ»
+            </h2>
+            <div class="title-box__subtitle">Больше не нужно искать подрядчиков на каждый этап —<br>
+                мы делаем всё сами!
+            </div>
+        </div>
+
+        <div class="services row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv1.jpg 1x, ./images/dist/p/serv1@2.jpg 2x">
+                            <img src="./images/dist/p/serv1.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Персональный менеджер
+                    </div>
+                    <div class="services__item__text">
+                        для полного сопровождения
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv3.jpg 1x, ./images/dist/p/serv3@2.jpg 2x">
+                            <img src="./images/dist/p/serv3.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Проектирование
+                    </div>
+                    <div class="services__item__text">
+                        помощь профессионального технолога
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv2.jpg 1x, ./images/dist/p/serv2@2.jpg 2x">
+                            <img src="./images/dist/p/serv2.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Подбор материалов и фурнитуры
+                    </div>
+                    <div class="services__item__text">
+                        более 5000 наименований
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv4.jpg 1x, ./images/dist/p/serv4@2.jpg 2x">
+                            <img src="./images/dist/p/serv4.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Упаковка и доставка
+                    </div>
+                    <div class="services__item__text">
+                        сохранность комплектации заказа
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv5.jpg 1x, ./images/dist/p/serv5@2.jpg 2x">
+                            <img src="./images/dist/p/serv5.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Распил ЛДСП, МДФ, HPL, шпона
+                    </div>
+                    <div class="services__item__text">
+                        с ювелирной точностью
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv6.jpg 1x, ./images/dist/p/serv6@2.jpg 2x">
+                            <img src="./images/dist/p/serv6.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Кромление PUR
+                    </div>
+                    <div class="services__item__text">
+                        эталонные торцы деталей
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv7.jpg 1x, ./images/dist/p/serv7@2.jpg 2x">
+                            <img src="./images/dist/p/serv7.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Присадка крепежа и механизмов
+                    </div>
+                    <div class="services__item__text">
+                        идеальный стык и функциональность
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <a href="" class="services__item">
+                    <div class="services__item__img">
+                        <picture>
+                            <source srcset="./images/dist/p/serv8.jpg 1x, ./images/dist/p/serv8@2.jpg 2x">
+                            <img src="./images/dist/p/serv8.jpg"
+                                 width="304" height="200"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                    <div class="services__item__title">
+                        Фрезеровка на ЧПУ
+                    </div>
+                    <div class="services__item__text">
+                        для реализации любых форм
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Реализованные проекты</h2>
+
+                    <ul class="projects__tabs nav ">
+                        <li>
+                            <a href="#tab1" class="active" data-bs-toggle="tab" data-bs-target="#tab1">Салоны</a>
+                        </li>
+                        <li>
+                            <a href="#tab2" data-bs-toggle="tab" data-bs-target="#tab2">Рестораны</a>
+                        </li>
+                        <li>
+                            <a href="#tab3" data-bs-toggle="tab" data-bs-target="#tab3">Частные проекты</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab1">
+                            <div class="swiper projects__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__slider__footer">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="projects__slider__footer__line"></div>
+                                    <div class="projects__slider__footer__nav">
+                                        <button class="swiper-button-prev"></button>
+                                        <button class="swiper-button-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            <div class="swiper projects__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__slider__footer">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="projects__slider__footer__line"></div>
+                                    <div class="projects__slider__footer__nav">
+                                        <button class="swiper-button-prev"></button>
+                                        <button class="swiper-button-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                            <div class="swiper projects__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects__slider__item">
+                                            <picture>
+                                                <source srcset="./images/dist/p/proj.jpg 1x, ./images/dist/p/proj@2.jpg 2x">
+                                                <img src="./images/dist/p/proj.jpg"
+                                                     width="854" height="450"
+                                                     loading="lazy"
+                                                     alt="">
+                                            </picture>
+                                            <div class="projects__slider__item__caption">
+                                                Барная стойка для ресторана «Luigi» (массив дуба + сталь)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects__slider__footer">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="projects__slider__footer__line"></div>
+                                    <div class="projects__slider__footer__nav">
+                                        <button class="swiper-button-prev"></button>
+                                        <button class="swiper-button-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home-partner">
+            <h2>Станьте нашим партнёром</h2>
+            <div class="fpad40 text-center">
+                <div class="title-box__subtitle">
+                    Получите доступ к уникальным предложениям <br>
+                    и привилегиям, заполнив простую форму.
+                </div>
+            </div>
+            <div class="fpad40">
+                <div class="home-partner__line">
+                    <svg width="18" href="24" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 13.32 18">
+                        <path fill="#2b2b2b"
+                              d="m7.66,17c0-2.44,2.22-4.66,4.66-4.66h1v-2h-1c-1.77,0-3.44.78-4.66,2V0h-2v12.34c-1.22-1.22-2.89-2-4.66-2H0v2h1c2.44,0,4.66,2.22,4.66,4.66v1h2v-1Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="home-partner__btn d-flex justify-content-center">
+                <a href="" class="btn btn--black">Начать сотрудничество</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-brands">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <h2>Работаем с премиальными материалами</h2>
+                    <div class="title-box__subtitle">
+                        Гарантируем качество обработки и материалов
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-xl-6 col-lg-6">
+                    <ul class="home-brands__list nav">
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand1.svg" loading="lazy" width="140" height="32" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand2.svg" loading="lazy" width="95" height="60" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand3.svg" loading="lazy" width="140" height="48" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand4.svg" loading="lazy" width="140" height="30" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand5.svg" loading="lazy" width="140" height="36" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand6.png" loading="lazy" width="140" height="24" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand7.svg" loading="lazy" width="140" height="38" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand8.svg" loading="lazy" width="140" height="24" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand9.svg" loading="lazy" width="140" height="51" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="home-brands__img">
+                        <picture>
+                            <source srcset="./images/dist/p/brand.jpg 1x, ./images/dist/p/brand@2.jpg 2x">
+                            <img src="./images/dist/p/brand.jpg"
+                                 width="415" height="460"
+                                 loading="lazy"
+                                 alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+                <div class="faq">
+                    <h2>Частые вопросы</h2>
+                    <div class="faq__list">
+                        <div class="faq__item">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Какой минимальный заказ?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq1">
+                                <div class="faq__item__body">
+                                    Какой минимальный заказ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Какие сроки производства?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq2">
+                                <div class="faq__item__body">Какие сроки производства?</div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Можно ли использовать наши чертежи?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq3">
+                                <div class="faq__item__body">Да, работаем с любыми форматами (AutoCAD, SketchUp)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__left">
+                        <a href="/" class="footer__logo">
+                            Pilotage
+                        </a>
+                        <ul class="nav flex-column footer__nav">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Услуги</a></li>
+                            <li><a href="">Проекты</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__left">
+                        <div class="footer__address">
+                            Московская область,<br>
+                            Долгопрудный, улица Жуковского, 12
+                        </div>
+
+                        <a href="tel:+74951343484" class="footer__tel">+7 (495) 134 34 84</a>
+
+                        <a href="mailto:info@pilotage-mk.ru" class="footer__email">info@pilotage-mk.ru</a>
+
+                        <div class="footer__worktime">Работаем: Пн-Пт с 9:00 до 18:00</div>
+
+                        <a href="" class="btn">Заполнить заявку</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="footer__map" id="map">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="footer__copy">© 2025 PILOTAGE</div>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <a href="https://koti.co/" target="_blank" class="d-flex align-items-center footer__web">
+                            <div class="ico">
+                                <svg width="21" height="24" class="d-block" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 15.03 17.57">
+                                    <path fill="currentColor"
+                                          d="m11.38,2.21H3.65L0,0v15.68H0v.02h.09l7.36,1.86s.04,0,.07,0h0s.04,0,.07,0l7.36-1.86h.09s0,0,0,0v-.02h0V0l-3.65,2.21Zm-3.92,13.12l-6.85-1.88V2.81s0,0,0,0v-1.73l2.85,1.73h4.05s2.87,0,2.87,0h1.17l2.85-1.73v1.73h0v10.64s-6.88,1.88-6.88,1.88c-.03,0-.06,0-.09,0Z"></path>
+                                    <polygon fill="currentColor"
+                                             points="9.01 10.29 9 10.29 7.5 10.29 6.02 10.29 7.5 11.78 7.5 11.79 7.51 11.78 7.51 11.79 9.01 10.29"></polygon>
+                                </svg>
+                            </div>
+                            <span class="d-block ps-3">Разработка сайта<br> KOTICO</span>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 footer__bottom__col-politika">
+                        <ul class="nav justify-content-end">
+                            <li><a href="">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="topNavMenu">
+        <div class="modal-dialog modal-fullscreen p-0">
+            <div class="modal-content">
+                <div class="modal-dialog__header">
+                    <div class="container">
+                        <div class="modal-dialog__header__wrap">
+                            <a href="" class="header__logo">
+                                Pilotage
+                            </a>
+
+                            <a href="" data-bs-dismiss="modal" class="modal-dialog__header__close">
+                                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 307.2 307.2">
+                                    <path class="cls-1"
+                                          d="m189.8,153.6l109.9-109.9c10-10,10-26.2,0-36.2s-26.2-10-36.2,0l-109.9,109.9L43.7,7.5C33.7-2.5,17.5-2.5,7.5,7.5s-10,26.2,0,36.2l109.9,109.9L7.5,263.5c-10,10-10,26.2,0,36.2,5,5,11.55,7.5,18.1,7.5s13.1-2.5,18.1-7.5l109.9-109.9,109.9,109.9c5,5,11.55,7.5,18.1,7.5s13.1-2.5,18.1-7.5c10-10,10-26.2,0-36.2l-109.9-109.9Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="modal-dialog__body">
+                        <ul class="nav modal-dialog__nav">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Услуги</a></li>
+                            <li><a href="">Проекты</a></li>
+                            <li><a href="">Материалы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="modal-dialog__address">
+                            Московская область,<br>
+                            Долгопрудный, улица Жуковского, 12
+                        </div>
+
+                        <a class="modal-dialog__tel" href="tel:+74951343484">+7 (495) 134 34 84</a>
+
+                        <a class="modal-dialog__email" href="mailto:info@pilotage-mk.ru">info@pilotage-mk.ru</a>
+
+                        <div class="modal-dialog__worktime">Работаем: Пн-Пт с 9:00 до 18:00</div>
+
+                        <div class="modal-dialog__btn">
+                            <a href="" class="btn w-100" data-bs-dismiss="modal">Заполнить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end main-->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ae1f04f2-46e6-4b66-af0f-e3caefe2a478&lang=ru_RU"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        ymaps.ready(function () {
+            const map = new ymaps.Map('map', {
+                center: [55.920880, 37.505885],
+                zoom: 12,
+
+                controls: ['zoomControl']
+            });
+
+
+            let myPlacemark = new ymaps.Placemark([55.920880, 37.505885], {}, {
+                // Кастомная иконка
+                iconLayout: 'default#image',
+                iconImageHref: 'images/dist/p/marker.svg', // путь к вашей иконке
+                iconImageSize: [48, 64],
+                iconImageOffset: [-24, -64] // смещение, чтобы острие указывало на точку
+            });
+
+            map.geoObjects.add(myPlacemark);
+
+            map.behaviors.disable('scrollZoom');
+        });
+    });
+</script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/pilotage.min.js"></script>
+</body>
+</html>
+
+

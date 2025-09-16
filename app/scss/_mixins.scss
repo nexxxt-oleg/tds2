@@ -1,0 +1,27 @@
+@mixin respond ($breakpoint) {
+
+  @if $breakpoint==mac {
+    @media only screen and (min-width: 1921px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 991.1px) and (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  }
+}
+
+:root {
+  --color-main: #484848;
+  --color-red: #ad2125;
+  --color-silver: #8a8a8a;
+  --color-red-hover: #961f23;
+}

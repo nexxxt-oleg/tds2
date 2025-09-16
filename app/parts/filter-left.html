@@ -1,0 +1,294 @@
+<button class="catalog-mob-btn-filter btn btn--silver" id="catalogFilterOpen">
+    <span class="catalog-mob-btn-filter__ico">
+        <svg width="18" height="12">
+            <use xlink:href="#svg-filter"></use>
+        </svg>
+    </span>
+    <span class="catalog-mob-btn-filter__text">Показать фильтр</span>
+    <span class="catalog-mob-btn-filter__drop">
+        <svg width="9" height="5">
+            <use xlink:href="#svg-up"></use>
+        </svg>
+    </span>
+</button>
+
+<div class="catalog-filter" id="catalogFilter">
+    <div class="catalog-filter__mob-header">
+        <span>Фильтры</span>
+        <div class="btn-close" id="catalogFilterClose">
+            <svg width="13" height="13">
+                <use xlink:href="#svg-close"></use>
+            </svg>
+        </div>
+    </div>
+    <form action="">
+        <div class="catalog-filter__list">
+            <div class="catalog-filter__item accordion-item">
+                <div class="catalog-filter__item__header" data-bs-toggle="collapse" data-bs-target="#filter1">
+                    <span>Цена, руб.</span>
+                    <div class="catalog-filter__item__header__ico">
+                        <svg width="12" height="7" class="d-block">
+                            <use xlink:href="#svg-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse show" id="filter1">
+                    <div class="catalog-filter__item__body">
+                        <div class="catalog-filter__price d-flex">
+                            <div class="catalog-filter__price__col">
+                                <label for="priceMin">
+                                    от
+                                </label>
+                                <input type="text" class="catalog-filter__price__val js-number" id="priceMin">
+                            </div>
+                            <div class="catalog-filter__price__sep"></div>
+                            <div class="catalog-filter__price__col">
+                                <label for="priceMax">
+                                    до
+                                </label>
+                                <input type="text" class="catalog-filter__price__val js-number" id="priceMax">
+                            </div>
+                        </div>
+                        <div class="catalog-filter__price-slider">
+                            <div id="priceRange" data-max-price="100000"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-filter__item accordion-item">
+                <div class="catalog-filter__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#filter2">
+                    <span>Складская программа</span>
+                    <div class="catalog-filter__item__header__ico">
+                        <svg width="12" height="7" class="d-block">
+                            <use xlink:href="#svg-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="filter2">
+                    <div class="catalog-filter__item__search">
+                        <input type="text"
+                               autocomplete="off"
+                               placeholder="Быстрый поиск"
+                               class="catalog-filter__item__search__val"
+                               id="searchFilter2"
+                               oninput="changeFilter('filterScroll1', this)"
+                        >
+                        <div class="catalog-filter__item__search__submit">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-search"></use>
+                            </svg>
+                        </div>
+                        <div class="catalog-filter__item__search__close hidden"
+                             onclick="removeSearch('searchFilter2')">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-filter__item__body">
+                        <div class="catalog-filter__item__scroll active"
+                             data-simplebar data-simplebar-auto-hide="false"
+                             id="filterScroll1">
+                            <ul class="nav flex-column catalog-filter__item__list">
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="catalog-filter__res">Показать: 30</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-filter__item accordion-item">
+                <div class="catalog-filter__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#filter3">
+                    <span>Складская программа</span>
+                    <div class="catalog-filter__item__header__ico">
+                        <svg width="12" height="7" class="d-block">
+                            <use xlink:href="#svg-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="filter3">
+                    <div class="catalog-filter__item__search">
+                        <input type="text"
+                               autocomplete="off"
+                               placeholder="Быстрый поиск"
+                               class="catalog-filter__item__search__val"
+                               id="searchFilter3"
+                               oninput="changeFilter('filterScroll3', this)"
+                        >
+                        <div class="catalog-filter__item__search__submit">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-search"></use>
+                            </svg>
+                        </div>
+                        <div class="catalog-filter__item__search__close hidden"
+                             onclick="removeSearch('searchFilter3')">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-filter__item__body">
+                        <div class="catalog-filter__item__scroll active"
+                             data-simplebar data-simplebar-auto-hide="false"
+                             id="filterScroll3">
+                            <ul class="nav flex-column catalog-filter__item__list">
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка3">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f2" value="3">
+                                        <span class="custom-checkbox__text">Новинка3</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-filter__item accordion-item">
+                <div class="catalog-filter__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#filter4">
+                    <span>Складская программа</span>
+                    <div class="catalog-filter__item__header__ico">
+                        <svg width="12" height="7" class="d-block">
+                            <use xlink:href="#svg-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-collapse collapse" id="filter4">
+
+                    <div class="catalog-filter__item__body">
+                        <div class="catalog-filter__item__scroll"
+                             id="filterScroll4">
+                            <ul class="nav flex-column catalog-filter__item__list">
+                                <li data-filter="Новинка">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f3" value="1">
+                                        <span class="custom-checkbox__text">Новинка</span>
+                                    </label>
+                                </li>
+                                <li data-filter="Новинка2">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="f3" value="2">
+                                        <span class="custom-checkbox__text">Новинка2</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-filter__footer">
+            <button class="btn btn--silver w-100 text-uppercase">показать</button>
+            <a href="" class="catalog-filter__reset">
+                <svg width="12" height="12">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+                Сбросить <span class="ms-1">фильтр</span>
+            </a>
+        </div>
+    </form>
+</div>
