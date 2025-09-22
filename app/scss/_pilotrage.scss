@@ -127,21 +127,30 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+  &:hover {
+    background: #a67a4f;
+    color: #fff;
+  }
 
   &--black {
     background: #2b2b2b;
     color: #fff;
 
     &:hover {
-      background: #e5ae78;
+      background: #171717;
       color: #fff;
     }
   }
+}
 
-  &:hover {
-    background: #e5ae78;
-    color: #fff;
-  }
+.home-video__wrap:hover .home-video__wrap__play__btn {
+  background: #2b2b2b;
+}
+
+.projects__footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
 }
 
 .home-top.home-top--raspil {
