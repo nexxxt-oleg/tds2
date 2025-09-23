@@ -9,7 +9,6 @@ body {
 
 .header {
   padding: 35px 0;
-  background: #252525;
 
   &__logo {
     font-size: 36px;
@@ -70,7 +69,14 @@ body {
     text-decoration: none;
   }
 }
-
+.header.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all  0.2s ease-in-out;
+}
 .home-top {
   position: relative;
   z-index: 1;
@@ -106,7 +112,7 @@ body {
 
   &__wrap {
     background: #252525;
-    padding: 60px 0 280px;
+    padding: 170px 0 280px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -630,6 +636,11 @@ body {
       }
     }
   }
+}
+
+.home-top.home-top--dis .home-top__wrap {
+  background-image: url("../images/dist/p/bg-top1.jpg");
+  background-size: cover;
 }
 
 .fpad40 {
@@ -1389,6 +1400,27 @@ body {
     }
   }
 
+}
+.anchor {
+  position: absolute;
+  left: 0;
+  top: -120px;
+  width: 100%;
+}
+
+body.fix_menu {
+  .header.fix {
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    .header__logo {
+      color: #2b2b2b;
+    }
+    .header__nav a,
+    .header__work-time,
+    .header__tel {
+      color: #2b2b2b;
+    }
+  }
 }
 
 
