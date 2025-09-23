@@ -929,11 +929,11 @@
                 <div class="modal-dialog__header">
                     <div class="container">
                         <div class="modal-dialog__header__wrap">
-                            <a href="" class="header__logo">
+                            <div class="header__logo">
                                 Pilotage
-                            </a>
+                            </div>
 
-                            <a href="" data-bs-dismiss="modal" class="modal-dialog__header__close">
+                            <a id="topNavMenuClose" href="" data-bs-dismiss="modal" class="modal-dialog__header__close">
                                 <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 307.2 307.2">
                                     <path class="cls-1"
@@ -946,11 +946,11 @@
                 <div class="container">
                     <div class="modal-dialog__body">
                         <ul class="nav modal-dialog__nav">
-                            <li><a href="">Главная</a></li>
-                            <li><a href="">Услуги</a></li>
-                            <li><a href="">Проекты</a></li>
-                            <li><a href="">Материалы</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a onclick="document.getElementById('topNavMenuClose').click();return true;" href="#benefit">Преимущества</a></li>
+                            <li><a onclick="document.getElementById('topNavMenuClose').click();return true;" href="#services">Услуги</a></li>
+                            <li><a onclick="document.getElementById('topNavMenuClose').click();return true;" href="#projects">Проекты</a></li>
+                            <li><a onclick="document.getElementById('topNavMenuClose').click();return true;" href="#materials">Материалы</a></li>
+                            <li><a onclick="document.getElementById('topNavMenuClose').click();return true;" href="#contacts">Контакты</a></li>
                         </ul>
                         <div class="modal-dialog__address">
                             Московская область,<br>
