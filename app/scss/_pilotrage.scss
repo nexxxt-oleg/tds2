@@ -1567,6 +1567,13 @@ body {
       }
     }
   }
+  .anchor {
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
