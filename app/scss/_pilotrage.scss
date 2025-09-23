@@ -574,19 +574,32 @@ body {
         border: 1px solid #505050;
         margin: 0;
         opacity: 1 !important;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-size: 24px 18px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-color: transparent;
+        color: #2b2b2b;
+        &:hover {
+          color: #fff;
+          background-color: #2b2b2b;
+        }
       }
 
       & .swiper-button-next {
-        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='_Ð¡Ð»Ð¾Ð¹_1' data-name='Ð¡Ð»Ð¾Ð¹ 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 18 13.32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill-rule: evenodd; %7D .cls-1, .cls-2 %7B stroke-width: 0px; %7D .cls-2 %7B fill: none; %7D .cls-3 %7B clip-path: url(%23clippath); %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-2' width='18' height='13.32'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg class='cls-3'%3E%3Cpath class='cls-1' d='m17,5.66c-2.44,0-4.66-2.22-4.66-4.66V0h-2v1c0,1.77.78,3.44,2,4.66H0v2h12.34c-1.22,1.22-2,2.89-2,4.66v1h2v-1c0-2.44,2.22-4.66,4.66-4.66h1v-2h-1Z'/%3E%3C/g%3E%3C/svg%3E");
+        svg {
+          width: 24px !important;
+          height: 18px !important;
+        }
       }
 
       & .swiper-button-prev {
-        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='_Ð¡Ð»Ð¾Ð¹_1' data-name='Ð¡Ð»Ð¾Ð¹ 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 18 13.32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill-rule: evenodd; %7D .cls-1, .cls-2 %7B stroke-width: 0px; %7D .cls-2 %7B fill: none; %7D .cls-3 %7B clip-path: url(%23clippath); %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-2' width='18' height='13.32'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg class='cls-3'%3E%3Cpath class='cls-1' d='m1,7.66c2.44,0,4.66,2.22,4.66,4.66v1h2v-1c0-1.77-.78-3.44-2-4.66h12.34v-2H5.66c1.22-1.22,2-2.89,2-4.66V0h-2v1c0,2.44-2.22,4.66-4.66,4.66H0v2h1Z'/%3E%3C/g%3E%3C/svg%3E");
+        svg {
+          width: 24px !important;
+          height: 18px !important;
+        }
       }
 
       &__line {
@@ -1341,6 +1354,41 @@ body {
 }
 [data-aos].aos-animate {
   visibility: visible;
+}
+
+.raspil-prim__item__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.raspil-prim__item {
+  position: relative;
+  overflow: hidden;
+  &__ico {
+    position: relative;
+    z-index: 2;
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+
 }
 
 
