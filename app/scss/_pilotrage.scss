@@ -32,6 +32,7 @@ body {
       font-weight: 300;
       text-decoration: none;
       transition: all 0.2s ease-in-out;
+
       &:hover {
         opacity: 0.7;
       }
@@ -69,14 +70,16 @@ body {
     text-decoration: none;
   }
 }
+
 .header.fix {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 50;
-  transition: all  0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
 .home-top {
   position: relative;
   z-index: 1;
@@ -133,6 +136,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+
   &:hover {
     background: #a67a4f;
     color: #fff;
@@ -161,9 +165,12 @@ body {
 
 .home-top.home-top--raspil {
   height: 719px;
-  background: url("../images/dist/p/bg-pilotag1.jpg") 50% 0 no-repeat;
+  /*background: url("../images/dist/p/bg-pilotag1.jpg") 50% 0 no-repeat;*/
+  background-color: #000;
   background-size: cover;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
 
   .home-top__wrap {
     background: transparent;
@@ -173,6 +180,22 @@ body {
   .header {
     background: transparent;
   }
+}
+
+.home-top.home-top--raspil .header {
+  position: relative;
+  z-index: 10;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
 }
 
 .raspil-prim {
@@ -214,6 +237,7 @@ body {
     max-width: 1320px;
   }
 }
+
 #revSlider {
   .swiper-pagination {
     display: none;
@@ -497,6 +521,7 @@ body {
       .services__item__title {
         color: #a67c52;
       }
+
       .services__item__img {
         img {
           filter: none;
@@ -588,6 +613,7 @@ body {
         background-position: 50% 50%;
         background-color: transparent;
         color: #2b2b2b;
+
         &:hover {
           color: #fff;
           background-color: #2b2b2b;
@@ -1363,6 +1389,7 @@ body {
 [data-aos] {
   visibility: hidden;
 }
+
 [data-aos].aos-animate {
   visibility: visible;
 }
@@ -1374,6 +1401,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   img {
     display: block;
     width: 100%;
@@ -1386,14 +1414,17 @@ body {
 .raspil-prim__item {
   position: relative;
   overflow: hidden;
+
   &__ico {
     position: relative;
     z-index: 2;
   }
+
   &__text {
     position: relative;
     z-index: 2;
   }
+
   &:hover {
     img {
       transform: scale(1.05);
@@ -1401,6 +1432,7 @@ body {
   }
 
 }
+
 .anchor {
   position: absolute;
   left: 0;
@@ -1412,9 +1444,11 @@ body.fix_menu {
   .header.fix {
     background: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
     .header__logo {
       color: #2b2b2b;
     }
+
     .header__nav a,
     .header__work-time,
     .header__tel {
@@ -1426,6 +1460,152 @@ body.fix_menu {
 .swiper-button-disabled {
   opacity: 0;
   visibility: hidden;
+}
+
+.b24-form-header-title {
+  color: #2b2b2b !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  padding-bottom: 20px !important;
+  text-transform: uppercase;
+  font-family: Geologica, sans-serif !important;
+  margin: 0 !important;
+}
+
+.b24-form-header-description {
+  color: #6e6e6e !important;
+  font-size: 15px !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  font-family: Geologica, sans-serif !important;
+}
+
+.b24-form-header.b24-form-padding-side {
+  border-bottom: none !important;
+  padding: 0 0 30px !important;
+}
+
+.b24-form-content.b24-form-padding-side {
+  padding: 0 65px !important;
+}
+
+.b24-form-control-string .b24-form-control-label,
+.b24-form-control-list .b24-form-control-label,
+.b24-form-control-text .b24-form-control-label {
+  color: #6e6e6e !important;
+  font-size: 16px !important;
+  font-family: Geologica, sans-serif !important;
+  opacity: 1 !important;
+}
+
+.b24-form-control-agreement {
+  .b24-form-control-desc {
+    color: #6e6e6e !important;
+    display: block;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-family: Geologica, sans-serif !important;
+    padding-left: 26px;
+    position: relative;
+    opacity: 1 !important;
+
+    .b24-form-field-agreement-link {
+      color: #6e6e6e !important;
+      display: block;
+      font-size: 12px !important;
+      line-height: 16px !important;
+      font-family: Geologica, sans-serif !important;
+      opacity: 1 !important;
+    }
+
+    &::after {
+      background-color: #f6f6f6;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 9px auto;
+      border: 1px solid #cfcfcf;
+      border-radius: 3px;
+      content: "";
+      display: block;
+      height: 18px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 18px;
+    }
+  }
+
+  .b24-form-control-required {
+    display: none;
+  }
+
+  input {
+    display: none;
+
+    &:checked + .b24-form-control-desc::after {
+      background-size: 9px auto;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg data-name='Ð¡Ð»Ð¾Ð¹ 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.99 368.41'%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath style='fill:none;stroke-width:0' d='M0 0h511.98v368.41H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg style='clip-path:url(%23a)'%3E%3Cpath d='M500.09 11.89c-15.84-15.86-41.56-15.85-57.43 0L184.21 270.36 69.34 155.49c-15.86-15.86-41.57-15.86-57.44 0s-15.86 41.57 0 57.44l143.58 143.58c7.93 7.93 18.32 11.9 28.71 11.9s20.8-3.96 28.72-11.9L500.09 69.33c15.86-15.85 15.86-41.57 0-57.44' style='stroke-width:0'/%3E%3C/g%3E%3C/svg%3E");
+
+    }
+  }
+}
+
+.b24-form-btn {
+  align-items: center;
+  background: #bd8f62 !important;
+  border: none;
+  border-radius: 0 !important;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  line-height: 24px;
+  padding: 5px 25px;
+  text-decoration: none;
+  font-family: Geologica, sans-serif !important;
+  font-size: 18px !important;
+  &:hover {
+    background: #a67a4f !important;
+    color: #fff;
+  }
+}
+
+textarea.b24-form-control {
+  height: 150px !important;
+  resize: none !important;
+  background: #f6f6f6 !important;
+  border: 1px solid #cfcfcf !important;
+  border-radius: 5px !important;
+}
+
+.b24-form-wrapper.b24-form-border-bottom {
+  border-bottom: none !important;
+}
+
+.b24-form-sign {
+  padding: 24px 65px 0 !important;
+  .b24-form-sign-abuse-link {
+    color: #6e6e6e !important;
+    opacity: 1 !important;
+    border-bottom: none !important;
+    text-decoration: underline !important;
+    font-family: Geologica, sans-serif !important;
+  }
+
+  .b24-form-sign-text {
+    color: #6e6e6e !important;
+    opacity: 1;
+  }
+
+  .b24-form-sign-bx,
+  & .b24-form-sign-24{
+    color: #6e6e6e;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: Geologica, sans-serif !important;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -1661,6 +1841,28 @@ body.fix_menu {
 }
 
 @media (max-width: 768px) {
+  .b24-form-header-description {
+    font-size: 13px !important;
+  }
+  .b24-form-header.b24-form-padding-side {
+    padding-bottom: 20px !important;
+  }
+  .b24-form-header-title {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    padding-bottom: 10px !important;
+  }
+  .b24-form-btn {
+    font-size: 14px !important;
+    height: 48px !important;
+    padding: 5px 20px !important;
+  }
+  .b24-form-sign {
+    padding: 24px 0 0 !important;
+  }
+  .b24-form-content.b24-form-padding-side {
+    padding: 0 !important;
+  }
   .projects__tabs {
     gap: 10px;
     margin-bottom: 30px;
@@ -1841,6 +2043,7 @@ body.fix_menu {
   }
   .production__item {
     padding-left: 52px;
+
     &:last-child {
       border-bottom: none;
       margin-bottom: 10px;
@@ -1864,6 +2067,7 @@ body.fix_menu {
     padding-right: 0;
     line-height: 1.4;
     font-size: 12px;
+
     &__title {
       font-size: 14px;
     }
@@ -1897,6 +2101,7 @@ body.fix_menu {
   }
   .form-callback {
     padding: 25px 20px;
+
     &__title {
       font-size: 18px;
       padding-bottom: 10px;
@@ -1905,6 +2110,7 @@ body.fix_menu {
   .form-callback__footer {
     display: block !important;
     text-align: center;
+
     a {
       display: block;
       margin-bottom: 10px;
@@ -1920,6 +2126,7 @@ body.fix_menu {
     width: 48px;
     height: 48px;
     border-radius: 24px;
+
     svg {
       width: 24px;
       height: 24px;
