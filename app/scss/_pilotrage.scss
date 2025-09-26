@@ -1608,6 +1608,18 @@ textarea.b24-form-control {
   }
 }
 
+.b24-window-close {
+  background-color: #bd8f62 !important;
+}
+
+.b24-window-panel.b24-window-panel-pos-right {
+  .b24-form-header-description {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+  }
+}
+
+
 @media (max-width: 1400px) {
   .header__nav {
     gap: 20px;
