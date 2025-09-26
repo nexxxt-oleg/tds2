@@ -1853,6 +1853,9 @@ textarea.b24-form-control {
 }
 
 @media (max-width: 768px) {
+  .home-top.home-top--raspil .home-top__wrap {
+    padding-top: 10px;
+  }
   .b24-form-header-description {
     font-size: 13px !important;
   }
@@ -1947,7 +1950,7 @@ textarea.b24-form-control {
     margin-bottom: 60px;
   }
   .home-cooperation__wrap {
-    padding: 45px;
+    padding: 45px 20px;
   }
   .home-cooperation__btn {
     padding-top: 0;
@@ -2101,6 +2104,14 @@ textarea.b24-form-control {
   }
   .rev-more-link__caption {
     font-size: 16px;
+  }
+  .b24-window-panel.b24-window-panel-pos-right .b24-form-header-description {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .b24-window-panel.b24-window-panel-pos-right .b24-form-content.b24-form-padding-side {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
