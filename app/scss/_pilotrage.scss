@@ -2106,12 +2106,12 @@ textarea.b24-form-control {
     font-size: 16px;
   }
   .b24-window-panel.b24-window-panel-pos-right .b24-form-header-description {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
   .b24-window-panel.b24-window-panel-pos-right .b24-form-content.b24-form-padding-side {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 
   .modal-dialog__header__wrap {
