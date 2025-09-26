@@ -2113,6 +2113,12 @@ textarea.b24-form-control {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .modal-dialog__header__wrap {
+    .header__logo {
+      color: #2b2b2b !important;
+    }
+  }
 }
 
 @media (max-width: 574px) {
