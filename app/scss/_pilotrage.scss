@@ -1879,6 +1879,14 @@ textarea.b24-form-control {
 }
 
 @media (max-width: 768px) {
+  .b24-window-panel.b24-window-panel-pos-right {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    .b24-form-sign{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
   .home-top.home-top--raspil .home-top__wrap {
     padding-top: 10px;
   }
