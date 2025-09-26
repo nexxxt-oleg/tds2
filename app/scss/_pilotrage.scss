@@ -1646,6 +1646,10 @@ textarea.b24-form-control {
   cursor: pointer;
 }
 
+body:not(.modal-open) {
+  overflow: visible !important;
+}
+
 @media (max-width: 1400px) {
   .header__nav {
     gap: 20px;
