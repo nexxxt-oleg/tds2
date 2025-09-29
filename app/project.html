@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pilotage</title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="main pilotage">
+    <header class="header fix header--white" id="header">
+        <div class="container">
+            <div class="row header__row" data-aos="fade-down">
+                <div class="col-lg-2 header__col-logo">
+                    <div class="header__logo">
+                        Pilotage
+                    </div>
+
+                    <div class="ms-auto only-mob">
+                        <div class="header__mob-col-nav">
+                            <a href="tel:+74951343484" class="header__mob-tel">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480">
+                                    <path fill="currentColor"
+                                          d="m464.56,345.6c-1.31-1.04-96.56-69.7-122.7-64.77-12.48,2.21-19.62,10.72-33.94,27.76-2.3,2.75-7.84,9.34-12.14,14.03-9.05-2.95-17.88-6.54-26.42-10.75-44.07-21.46-79.68-57.06-101.14-101.14-4.21-8.54-7.8-17.37-10.75-26.42,4.7-4.32,11.3-9.86,14.11-12.22,16.96-14.24,25.49-21.38,27.7-33.89,4.53-25.92-64.08-121.82-64.8-122.69-6.3-9.01-16.32-14.7-27.28-15.52C79.39,0,0,102.99,0,120.34c0,1.01,1.46,103.47,127.81,232,128.4,126.21,230.85,127.66,231.86,127.66,17.36,0,120.34-79.39,120.34-107.2-.81-10.92-6.48-20.91-15.44-27.2Z"/>
+                                </svg>
+                            </a>
+                            <a data-bs-toggle="modal"
+                               href="#topNavMenu"
+                               data-bs-target="#topNavMenu"
+                               class="header__mob-toggle">
+
+                                <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 272">
+                                    <path fill="currentColor"
+                                          d="m360,48H24C10.4,48,0,37.6,0,24S10.4,0,24,0h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,160H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,272H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-xl-7 only-pc">
+                    <ul class="nav header__nav">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/#services">Услуги</a></li>
+                        <li><a href="/#projects">Проекты</a></li>
+                        <li><a href="/#materials">Материалы</a></li>
+                        <li><a href="/#contacts">Контакты</a></li>
+                        <li><a href=""><i class="header__nav__area"></i>Заполнить заявку</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xl-3 header__right only-pc">
+                    <div class="header__work-time">
+                        пн-пт: 09:00-18:00
+                    </div>
+                    <a href="tel:+74951343484" class="header__tel">+7 495 134-34-84</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="position-relative">
+        <div class="projects projects--page">
+            <div class="container">
+
+                <div class="title-box" data-aos="fade-up">
+                    <h1 class="h2">
+                        Реализованные проекты
+                    </h1>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="swiper overflow-visible" id="tabMobSlider">
+                            <div class="projects__tabs nav swiper-wrapper">
+                                <div class="swiper-slide w-auto">
+                                    <a href="" data-bs-toggle="tab" data-bs-target="#tabAll" class="active">
+                                        Все проекты
+                                    </a>
+                                </div>
+                                <div class="swiper-slide w-auto">
+                                    <a href="#tab1" data-bs-toggle="tab" data-bs-target="#tab1">Салоны</a>
+                                </div>
+                                <div class="swiper-slide w-auto">
+                                    <a href="#tab2" data-bs-toggle="tab" data-bs-target="#tab2">Рестораны</a>
+                                </div>
+                                <div class="swiper-slide w-auto">
+                                    <a href="#tab3" data-bs-toggle="tab" data-bs-target="#tab3">Частные проекты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tabAll">
+                               <ul class="nav project-list">
+                                   <li data-aos="fade-up">
+                                       <a href="" class="project-list__item">
+                                           <div class="project-list__item__img">
+                                               <picture>
+                                                   <source srcset="./images/dist/p/proj1.jpg 1x, ./images/dist/p/proj1@2.jpg 2x">
+                                                   <img src="./images/dist/p/proj1.jpg"
+                                                        width="600" height="400"
+                                                        loading="lazy"
+                                                        alt="">
+                                               </picture>
+                                           </div>
+                                           <div class="project-list__item__caption">
+                                               Интерьер для счастливой жизни: московская квартира в старом фонде
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li data-aos="fade-up">
+                                       <a href="" class="project-list__item">
+                                           <div class="project-list__item__img">
+                                               <picture>
+                                                   <source srcset="./images/dist/p/proj1.jpg 1x, ./images/dist/p/proj1@2.jpg 2x">
+                                                   <img src="./images/dist/p/proj1.jpg"
+                                                        width="600" height="400"
+                                                        loading="lazy"
+                                                        alt="">
+                                               </picture>
+                                           </div>
+                                           <div class="project-list__item__caption">
+                                               Интерьер для счастливой жизни: московская квартира в старом фонде
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li data-aos="fade-up">
+                                       <a href="" class="project-list__item">
+                                           <div class="project-list__item__img">
+                                               <picture>
+                                                   <source srcset="./images/dist/p/proj1.jpg 1x, ./images/dist/p/proj1@2.jpg 2x">
+                                                   <img src="./images/dist/p/proj1.jpg"
+                                                        width="600" height="400"
+                                                        loading="lazy"
+                                                        alt="">
+                                               </picture>
+                                           </div>
+                                           <div class="project-list__item__caption">
+                                               Интерьер для счастливой жизни: московская квартира в старом фонде
+                                           </div>
+                                       </a>
+                                   </li>
+                               </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab1">
+                                <ul class="nav project-list">
+                                    <li data-aos="fade-up">
+                                        <a href="" class="project-list__item">
+                                            <div class="project-list__item__img">
+                                                <picture>
+                                                    <source srcset="./images/dist/p/proj1.jpg 1x, ./images/dist/p/proj1@2.jpg 2x">
+                                                    <img src="./images/dist/p/proj1.jpg"
+                                                         width="600" height="400"
+                                                         loading="lazy"
+                                                         alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="project-list__item__caption">
+                                                Интерьер для счастливой жизни: московская квартира в старом фонде
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up">
+                                        <a href="" class="project-list__item">
+                                            <div class="project-list__item__img">
+                                                <picture>
+                                                    <source srcset="./images/dist/p/proj1.jpg 1x, ./images/dist/p/proj1@2.jpg 2x">
+                                                    <img src="./images/dist/p/proj1.jpg"
+                                                         width="600" height="400"
+                                                         loading="lazy"
+                                                         alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="project-list__item__caption">
+                                                Интерьер для счастливой жизни: московская квартира в старом фонде
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab2">
+
+                            </div>
+                            <div class="tab-pane fade" id="tab3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tpad80">
+                    <div class="home-cooperation" data-aos="fade">
+                        <div class="home-cooperation__wrap">
+                            <div class="title-box home-cooperation__title">
+                                <h2>
+                                    Начните сотрудничество уже сегодня!
+                                </h2>
+                                <div class="title-box__subtitle">
+                                    Получите приветственную скидку <strong>+5% на первый заказ</strong>
+                                </div>
+                            </div>
+                            <div class="home-cooperation__btn d-flex justify-content-center">
+                                <a href="" class="btn btn--black">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+                <div class="faq tpad100">
+                    <h2 data-aos="fade-up">Частые вопросы</h2>
+                    <div class="faq__list">
+                        <div class="faq__item" data-aos="fade-up">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse"
+                                 data-bs-target="#faq1">
+                                Какой минимальный заказ?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq1">
+                                <div class="faq__item__body">
+                                    Какой минимальный заказ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-aos="fade-up">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse"
+                                 data-bs-target="#faq2">
+                                Какие сроки производства?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq2">
+                                <div class="faq__item__body">Какие сроки производства?</div>
+                            </div>
+                        </div>
+                        <div class="faq__item" data-aos="fade-up">
+                            <div class="collapsed faq__item__title" data-bs-toggle="collapse"
+                                 data-bs-target="#faq3">
+                                Можно ли использовать наши чертежи?
+                            </div>
+                            <div class="accordion-collapse collapse " id="faq3">
+                                <div class="faq__item__body">Да, работаем с любыми форматами (AutoCAD,
+                                    SketchUp)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="position-relative">
+            <div class="anchor" id="contacts"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer__left">
+                            <a href="/" class="footer__logo">
+                                Pilotage
+                            </a>
+                            <ul class="nav flex-column footer__nav">
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">Услуги</a></li>
+                                <li><a href="">Проекты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer__left">
+                            <div class="footer__address">
+                                Московская область,<br>
+                                Долгопрудный, улица Жуковского, 12
+                            </div>
+
+                            <a href="tel:+74951343484" class="footer__tel">+7 (495) 134 34 84</a>
+
+                            <a href="mailto:info@pilotage-mk.ru"
+                               class="footer__email">info@pilotage-mk.ru</a>
+
+                            <div class="footer__worktime">Работаем: Пн-Пт с 9:00 до 18:00</div>
+
+                            <a href="" class="btn">Заполнить заявку</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer__map" id="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="footer__copy">© 2025 PILOTAGE</div>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <a href="https://koti.co/" target="_blank"
+                           class="d-flex align-items-center footer__web">
+                            <div class="ico">
+                                <svg width="21" height="24" class="d-block"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 15.03 17.57">
+                                    <path fill="currentColor"
+                                          d="m11.38,2.21H3.65L0,0v15.68H0v.02h.09l7.36,1.86s.04,0,.07,0h0s.04,0,.07,0l7.36-1.86h.09s0,0,0,0v-.02h0V0l-3.65,2.21Zm-3.92,13.12l-6.85-1.88V2.81s0,0,0,0v-1.73l2.85,1.73h4.05s2.87,0,2.87,0h1.17l2.85-1.73v1.73h0v10.64s-6.88,1.88-6.88,1.88c-.03,0-.06,0-.09,0Z"></path>
+                                    <polygon fill="currentColor"
+                                             points="9.01 10.29 9 10.29 7.5 10.29 6.02 10.29 7.5 11.78 7.5 11.79 7.51 11.78 7.51 11.79 9.01 10.29"></polygon>
+                                </svg>
+                            </div>
+                            <span class="d-block ps-3">Разработка сайта<br> KOTICO</span>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 footer__bottom__col-politika">
+                        <ul class="nav justify-content-end">
+                            <li><a href="">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="topNavMenu">
+        <div class="modal-dialog modal-fullscreen p-0">
+            <div class="modal-content">
+                <div class="modal-dialog__header">
+                    <div class="container">
+                        <div class="modal-dialog__header__wrap">
+                            <div class="header__logo">
+                                Pilotage
+                            </div>
+
+                            <a id="topNavMenuClose" href="" data-bs-dismiss="modal"
+                               class="modal-dialog__header__close">
+                                <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 307.2 307.2">
+                                    <path class="cls-1"
+                                          d="m189.8,153.6l109.9-109.9c10-10,10-26.2,0-36.2s-26.2-10-36.2,0l-109.9,109.9L43.7,7.5C33.7-2.5,17.5-2.5,7.5,7.5s-10,26.2,0,36.2l109.9,109.9L7.5,263.5c-10,10-10,26.2,0,36.2,5,5,11.55,7.5,18.1,7.5s13.1-2.5,18.1-7.5l109.9-109.9,109.9,109.9c5,5,11.55,7.5,18.1,7.5s13.1-2.5,18.1-7.5c10-10,10-26.2,0-36.2l-109.9-109.9Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="modal-dialog__body">
+                        <ul class="nav modal-dialog__nav">
+                            <li><a
+                                   href="/">Главная</a></li>
+                            <li><a
+                                   href="#services">Услуги</a></li>
+                            <li><a
+                                   href="#projects">Проекты</a></li>
+                            <li><a
+                                   href="#materials">Материалы</a></li>
+                            <li><a
+                                   href="#contacts">Контакты</a></li>
+                        </ul>
+                        <div class="modal-dialog__address">
+                            Московская область,<br>
+                            Долгопрудный, улица Жуковского, 12
+                        </div>
+
+                        <a class="modal-dialog__tel" href="tel:+74951343484">+7 (495) 134 34 84</a>
+
+                        <a class="modal-dialog__email"
+                           href="mailto:info@pilotage-mk.ru">info@pilotage-mk.ru</a>
+
+                        <div class="modal-dialog__worktime">Работаем: Пн-Пт с 9:00 до 18:00</div>
+
+                        <div class="modal-dialog__btn">
+                            <a href="" class="btn w-100" data-bs-dismiss="modal">Заполнить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end main-->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ae1f04f2-46e6-4b66-af0f-e3caefe2a478&lang=ru_RU"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        ymaps.ready(function () {
+            const map = new ymaps.Map('map', {
+                center: [55.920880, 37.505885],
+                zoom: 12,
+
+                controls: ['zoomControl']
+            });
+
+
+            let myPlacemark = new ymaps.Placemark([55.920880, 37.505885], {}, {
+                // Кастомная иконка
+                iconLayout: 'default#image',
+                iconImageHref: 'images/dist/p/marker.svg', // путь к вашей иконке
+                iconImageSize: [48, 64],
+                iconImageOffset: [-24, -64] // смещение, чтобы острие указывало на точку
+            });
+
+            map.geoObjects.add(myPlacemark);
+
+            map.behaviors.disable('scrollZoom');
+        });
+    });
+</script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/pilotage.min.js"></script>
+</body>
+</html>
+
+

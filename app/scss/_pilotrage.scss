@@ -405,6 +405,21 @@ body {
       font-weight: bold;
     }
   }
+
+  .h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+#tabMobSlider {
+  margin-bottom: 50px;
+  .projects__tabs {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -1633,10 +1648,12 @@ textarea.b24-form-control {
   width: 100%;
   height: 100%;
   z-index: 1;
+
   &.active {
     z-index: 20;
   }
 }
+
 .home-video__wrap {
   z-index: 10;
   position: relative;
@@ -1649,6 +1666,74 @@ textarea.b24-form-control {
 body:not(.modal-open) {
   overflow: visible !important;
 }
+
+.projects--page {
+  padding-top: 190px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+  .home-cooperation {
+    margin-bottom: 0;
+  }
+}
+
+.faq.tpad100 {
+  padding-top: 100px;
+}
+
+.header.header--white {
+  color: #2b2b2b;
+
+  .header__logo,
+  .header__nav a,
+  .header__work-time,
+  .header__tel {
+    color: #2b2b2b;
+  }
+}
+
+.project-list {
+  justify-content: space-between;
+  gap: 60px 92px;
+  li {
+    width: calc(50% - 46px);
+    &:nth-child(even) {
+      padding-top: 50px;
+    }
+  }
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: #000;
+
+    &:hover {
+      color: #a67c52;
+      img {
+        transform: scale(1.05);
+      }
+    }
+
+    &__img {
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: all .3s  ease-in-out;
+      }
+    }
+
+    &__caption {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 300;
+      padding-top: 15px;
+    }
+  }
+}
+
+
 
 @media (max-width: 1400px) {
   .header__nav {
@@ -1680,6 +1765,11 @@ body:not(.modal-open) {
 }
 
 @media (max-width: 991px) {
+  .header.header--white {
+    .header__mob-col-nav a {
+      color: #2b2b2b;
+    }
+  }
   .mob-tpad150 {
     padding-top: 150px;
   }
@@ -1880,13 +1970,67 @@ body:not(.modal-open) {
     left: 0;
     width: 100%;
   }
+  .modal-dialog__header__wrap {
+    .header__logo {
+      color: #2b2b2b !important;
+    }
+  }
+  .projects.projects--page {
+    padding: 100px 0 50px;
+  }
+  .project-list {
+    gap: 30px;
+    li {
+      width: calc(50% - 15px);
+    }
+  }
+  .tpad80 {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
+  #tabMobSlider {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    .projects__tabs {
+      flex-wrap: nowrap;
+      gap: 0;
+      justify-content: flex-start;
+      border-bottom: none;
+      position: relative;
+      z-index: 10;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: (100% + 50px);
+      height: 1px;
+      background: #c1c1c1;
+      left: 0;
+      top: 100%;
+      margin-left: -25px;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .faq.tpad100 {
+    padding-top: 50px;
+  }
+  .projects.projects--page {
+    padding: 100px 0 50px;
+    margin-bottom: 0 !important;
+  }
+  .title-box .h2 {
+    font-size: 20px;
+  }
   .b24-window-panel.b24-window-panel-pos-right {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
-    .b24-form-sign{
+
+    .b24-form-sign {
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
@@ -2160,6 +2304,19 @@ body:not(.modal-open) {
 }
 
 @media (max-width: 574px) {
+  .project-list__item__caption {
+    font-size: 16px;
+  }
+  .project-list {
+    display: block;
+    li {
+      width: 100%;
+      padding-bottom: 30px;
+      &:nth-child(2n) {
+        padding-top: 0;
+      }
+    }
+  }
   .photos {
     padding: 0 50px 20px 15px;
   }
