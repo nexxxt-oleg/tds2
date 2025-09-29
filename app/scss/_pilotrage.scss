@@ -2006,7 +2006,7 @@ body:not(.modal-open) {
     &::after {
       content: '';
       display: block;
-      width: (100% + 50px);
+      width: calc(100% + 50px);
       height: 1px;
       background: #c1c1c1;
       left: 0;

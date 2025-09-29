@@ -1,0 +1,26 @@
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px"
+     height="38.7px" viewBox="0 0 180 38.7" style="overflow:visible;enable-background:new 0 0 180 38.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_4_);}
+</style>
+    <defs>
+</defs>
+    <g>
+	<defs>
+		<rect id="SVGID_1_" width="180" height="38.7"/>
+	</defs>
+        <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+        <path class="st0" fill="#b3b3b3" d="M40.7,23.3c-1.4,3.3-6.4,6.2-14.2,6.2c-10.4,0-16.3-4.5-16.3-10.3C10.2,13.1,16.6,9,26.5,9
+		c7.4,0,12,2,13.8,5.6h11.3C50.2,5.4,42.1,0.1,27.3,0C10.7,0,0,7.7,0,19.4c0,10.9,9.9,19.4,27.3,19.4c15.8,0,24.6-7.9,24.6-15.4
+		L40.7,23.3L40.7,23.3z"/>
+        <polygon class="st0" fill="#b3b3b3" points="180,4 180,1.7 152.1,1.7 152.1,37.9 161.2,37.9 161.2,20.4 178.3,20.4 178.3,18 161.2,18 161.2,4 	"/>
+        <polygon class="st0" fill="#b3b3b3" points="95.7,35.5 95.7,20.4 114.2,20.4 114.2,18 95.7,18 95.7,4 115.3,4 115.3,1.7 86.5,1.7 86.5,37.9
+		115.6,37.9 115.6,35.5 	"/>
+        <polygon class="st0" fill="#b3b3b3" points="63.6,35 63.6,1.7 54.4,1.7 54.4,37.9 83.1,37.9 83.1,35 	"/>
+        <path class="st0" fill="#b3b3b3" d="M133.2,0.5h-0.1l-15.8,37.2h4.3l3.9-9.4h10.7l4.1,9.4h9.2L133.2,0.5z M126.8,25.9l4.1-10.1l4.3,10.1H126.8z"/>
+</g>
+</svg>
