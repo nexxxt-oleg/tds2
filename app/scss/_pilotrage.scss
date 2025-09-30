@@ -2573,6 +2573,10 @@ body:not(.modal-open) {
       color: #2b2b2b !important;
     }
   }
+  .services__item .services__item__img img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
 }
 
 @media (max-width: 574px) {
