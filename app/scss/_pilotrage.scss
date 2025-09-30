@@ -1943,7 +1943,7 @@ body:not(.modal-open) {
     position: relative;
 
     .project-list__item__caption {
-      opacity: 0;
+      opacity: 0.5;
       transition: all 0.2s ease-in-out;
     }
 
