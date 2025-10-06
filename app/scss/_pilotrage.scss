@@ -2249,6 +2249,10 @@ body:not(.modal-open) {
 }
 
 @media (max-width: 768px) {
+  .project-single__gallery h2 {
+    text-align: left;
+    padding-bottom: 20px;
+  }
   .project-single {
     padding-bottom: 50px;
   }
